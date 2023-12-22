@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chat_background"
+        tools:context=".Activity.ChatActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/chat_appbar_menu"
+                app:navigationIcon="@drawable/ic_back"
+                android:id="@+id/navigation">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfileDP"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imageParent"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bg_item_chat"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_group"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vikas Kumar"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="online"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_item_textbox"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_emogi"
+                    app:tint="@color/default_text" />
+
+                <EditText
+                    android:id="@+id/chatText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/message"
+                    android:maxLines="6"
+                    android:textColorHint="@color/default_text"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/paperPin"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_paper_pin"
+                    app:tint="@color/default_text" />
+
+                <ImageView
+                    android:id="@+id/rupee"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_item_chat"
+                    android:backgroundTint="@color/default_text"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_rupee"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_camera_filled"
+                    app:tint="@color/default_text" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/sendBtn"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_item_status"
+                android:backgroundTint="@color/icons"
+                android:padding="10dp"
+                android:src="@drawable/ic_mic" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/videoCall"
+        android:icon="@drawable/ic_video"
+        android:iconTint="@color/white"
+        android:title="Video Call"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/voiceCall"
+        android:icon="@drawable/ic_call"
+        android:iconTint="@color/white"
+        android:title="Video Call"
+        app:showAsAction="always" />
+
+    <item
+        android:title="More Options"
+        app:showAsAction="collapseActionView" />
+</menu>

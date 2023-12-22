@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfileDP"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_item_chat"
+            android:padding="6dp"
+            android:src="@drawable/ic_group"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Vikas Kumar"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="#868c92" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_send"
+                    app:tint="#868c92" />
+
+                <TextView
+                    android:id="@+id/tvMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Vikas Kumabskdja dajd sojha ljbd scjha psd cojahs dc aodjh coausdvpc ahusdr"
+                    android:textColor="#868c92"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/ivChatPin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_pin"
+                    app:tint="#868c92" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

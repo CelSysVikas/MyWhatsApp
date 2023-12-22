@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:visibility="gone"
+            android:id="@+id/ivProfileDP"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/imageParent"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_item_chat"
+            android:padding="6dp"
+            android:src="@drawable/ic_group"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Vikas Kumar"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivCallType"
+                    android:layout_width="16sp"
+                    android:layout_height="16sp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_call_send"
+                    app:tint="@color/icons" />
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/date_month"
+                    android:textColor="#868c92"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call"
+            android:layout_marginLeft="15dp"
+            app:tint="@color/icons" />
+    </LinearLayout>
+</layout>

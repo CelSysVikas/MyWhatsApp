@@ -1,0 +1,34 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyWhatsApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="android:foregroundTint">@color/fragment_background</item>
+
+        <!--        Top App bar-->
+        <item name="colorSurface">@color/primary</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/white</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.App.TitleLarge</item>
+
+        <item name="colorPrimaryContainer">@color/primary</item>
+        <item name="colorOnPrimaryContainer">@color/primaryAlpha</item>
+    </style>
+
+    <!--    Top AppBar-->
+    <style name="TextAppearance.App.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="Base.Theme.Splash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.MyWhatsApp" parent="Base.Theme.MyWhatsApp" />
+</resources>

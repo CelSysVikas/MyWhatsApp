@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background"
+        tools:context=".Activity.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.search.SearchBar$ScrollingViewBehavior">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/app_bar_menu"
+                app:title="@string/app_name" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="com.google.android.material.search.SearchBar$ScrollingViewBehavior"
+                app:tabIconTint="@color/primaryAlpha"
+                app:tabIndicatorColor="@color/selectedTab"
+                app:tabIndicatorFullWidth="true"
+                app:tabSelectedTextColor="@color/selectedTab"
+                app:tabTextColor="@color/primaryAlpha" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="15dp"
+            app:srcCompat="@drawable/ic_chat" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMainSmall"
+            android:visibility="gone"
+            style="?attr/floatingActionButtonSmallStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="80dp"
+            app:srcCompat="@drawable/ic_edit" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

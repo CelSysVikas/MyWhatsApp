@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary">#008069</color>
+
+    <color name="whatsapp_primary">#25d366</color>
+
+    <color name="no_dp">#d2d7db</color>
+    <color name="default_text">#868c92</color>
+    <color name="fragment_background">#fdfefe</color>
+    <color name="divider">#ececec</color>
+    <color name="primaryAlpha">#a2dacf</color>
+    <color name="selectedTab">#fff</color>
+
+    <color name="icons">#008069</color>
+    <color name="missedCall">#b74b5b</color>
+    <color name="meta">#25d366</color>
+
+</resources>
